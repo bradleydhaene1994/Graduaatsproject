@@ -16,70 +16,41 @@
 \section{Context en probleemstelling}%
 \label{vst:context}
 
-% Waar loop je stage, wat doet dat team, en welk concreet probleem of welke
-% concrete behoefte is de aanleiding? Noem de mensen voor wie het een probleem
-% is. Vermijd algemeenheden als "bedrijven hebben nood aan".
-
-Vervang deze tekst.
+Ik loop stage bij CMC NV. er is één software team die de software onderhoudt van een aantal producten. Deze producten worden gebruikt in de bedrijfswereld, en als er een probleem is met een product moet er een RMA (return merchandise authorization) aangemaakt worden
+om dit te kunnen verwezelijken. Het huidige process is heel verouderd en vergt heel veel manueel werk, also de server waar dit huidige process loopt is heel verouderd, waardoor deze op elk moment offline worden gehaald.
+Hier kruipt zeer veel werk in, dus er moet een site worden gemaakt waar alles veel meer geautomiseerd en klantvriendelijk is.
 
 %---------- 2. Doelstelling ---------------------------------------------------
 
 \section{Doelstelling}%
 \label{vst:doelstelling}
 
-% Wat bestaat er op het einde van dit project dat er vandaag niet is? Formuleer
-% het als een resultaat waarvan iemand kan vaststellen dat het er is, en
-% vermeld waaraan je zal merken dat het geslaagd is.
-
-Vervang deze tekst.
+Op het einde van het project bestaat een website waar men als klant zijnde gemakkelijk een RMA indient. De validatie, bijhouding van de status, etc... zal veel meer geautomiseerd zijn dan het nu is, en er zal veel minder manueel bijgehouden worden.
 
 %---------- 3. Technologieën --------------------------------------------------
 
 \section{Technologieën}%
 \label{vst:technologieen}
 
-% Met welke talen, frameworks, databanken en diensten ga je werken? Welke
-% liggen vast door de omgeving van het bedrijf, en welke kies je zelf? Vermeld
-% ook wat nieuw voor je is: technologische verbreding wordt gewaardeerd.
-%
-% Vermeld hier ook of je AI denkt in te zetten, en waarvoor. Dat mag en wordt
-% zelfs verwacht; in je rapport verantwoord je later wat je precies gedaan hebt.
-%
-% Verwerkt je toepassing persoonsgegevens, of zit er AI in wat je bouwt? Zeg
-% dat dan nu al in één zin: dan weet je begeleider meteen dat de AVG of de
-% AI Act meespeelt, en kan dat mee bekeken worden bij de goedkeuring.
+Er zal gebruik gemaakt worden van de programeertaal C\#, voor de frameworks zal ik gebruik maken van Blazor WASM en EF Core, voor databanken zal ik gebruik maken van Microsoft SQL Server, verder zal ik ook gebruik maken van Github, Keycloak en Uvion Uhost.
 
-Vervang deze tekst.
+Ik veronderstel AI te gebruiken, en dit wordt ook aangemoedigd door mijn stagebedrijf. Ik veronderstel dit vooral in te zetten voor syntax op te zoeken waar ik nog niet vertrouwd mee ben, alsook vooral voor bugfixing.
 
 %---------- 4. Afbakening -----------------------------------------------------
 
 \section{Afbakening}%
 \label{vst:afbakening}
 
-% DE BELANGRIJKSTE RUBRIEK. Je stage en je graduaatsproject lopen bij hetzelfde
-% bedrijf; dit is waar je ze uit elkaar houdt.
-%
-% Beschrijf:
-%   - wat je dagelijkse stagewerk is;
-%   - wat het afgebakende geheel is dat JIJ zelfstandig analyseert, ontwerpt
-%     en oplevert - dat is je graduaatsproject;
-%   - wat er uitdrukkelijk buiten valt.
-%
-% Toets voor jezelf: welke analyse en welk ontwerp maak jij zelf? Kan je daar
-% niets over schrijven, dan heb je een taak en geen project.
+Mijn dagelijks stagewerk is meehelpen aan de ontwikkeling van een reporting engine voor rapporten aan te maken via de verschillende applicaties van het bedrijf.
 
-Vervang deze tekst.
+Het project dat ik zelfstanding zou uitwerken is een volledige herwerking van het huidige RMA process, analyse + ontwerp van hoe de website er zou uitzien + volledige nieuwe codebase uitschrijven voor nieuwe website.
 
 %---------- 5. Verwachte meerwaarde -------------------------------------------
 
 \section{Verwachte meerwaarde}%
 \label{vst:meerwaarde}
 
-% Wat heeft het bedrijf hieraan? Wat blijft er van jouw werk over wanneer je
-% stage afgelopen is? Denk aan tijdwinst, minder fouten, nieuwe mogelijkheden,
-% lagere kosten, of een basis waarop verder gebouwd kan worden.
-
-Vervang deze tekst.
+Het RMA process zal veel vlotter en veel geautomatiseerder verlopen. Doordat da status van alle RMA's niet meer manueel moet bijgehouden worden, zal dit voor veel tijdswinst zorgen en tot minder fouten lijden.
 
 %---------- 6. Planning en werkbelasting --------------------------------------
 
@@ -97,18 +68,18 @@ Vervang deze tekst.
     \toprule
     \textbf{Fase} & \textbf{Wat lever je op} & \textbf{Uren} \\
     \midrule
-    Analyse en vereisten      & overzicht van de vereisten   & 15  \\
-    Technologiekeuze          & verantwoorde keuze           & 10  \\
-    Ontwerp                   & architectuur en gegevensmodel& 15  \\
-    Realisatie                & werkende oplossing           & 40  \\
-    Testen en validatie       & testverslag                  & 10  \\
-    Rapport, poster en demo   & de op te leveren documenten  & 10  \\
+    Analyse en vereisten & overzicht van de vereisten   & 5  \\
+    Technologiekeuze     & verantwoorde keuze           & 5  \\
+    Ontwerp              & architectuur en gegevensmodel& 20  \\
+    Realisatie           & werkende oplossing           & 50  \\
+    Testen en validatie  & testverslag                  & 10  \\
+    Rapport, poster en demo & de op te leveren documenten  & 10  \\
     \midrule
     \textbf{Totaal}           &                              & \textbf{100} \\
     \bottomrule
   \end{tabular}
   \caption[Planning en werkbelasting]{\label{tab:vst-planning}%
-    Vervang deze verdeling door je eigen planning.}
+    }
 \end{table}
 
 %---------- 7. Risico's -------------------------------------------------------
@@ -116,11 +87,5 @@ Vervang deze tekst.
 \section{Risico's}%
 \label{vst:risicos}
 
-% Wat kan dit project doen mislukken, en wat doe je dan? Denk aan: toegang tot
-% gegevens of systemen die je nodig hebt, afhankelijkheid van een collega of
-% een derde partij, technologie die je nog moet leren, of drukte op de
-% werkvloer waardoor je dagen niet vrijkomen.
-%
-% Twee tot drie risico's met telkens één zin over wat je terugvalplan is.
-
-Vervang deze tekst.
+1. Blazor is een nieuwe technologie waar ik nog niet vertrouwd mee ben: Meer tijd plannen om documentatie te doornemen. 
+2. Problemen met hosten via Uvion. Een bepaalde zekerheid inbouwen in de planning waardoor problemen met hosting tijdig kunnen worden ontdekt en opgelost.
